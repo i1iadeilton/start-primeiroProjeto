@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>teste2</title>
+  <link href="teste.css" rel="stylesheet" type="text/css" />
+ 
+</head>
+<body>
+
+  
+  
+  <h1>
+    <img class="image" src="everalds.png" alt="Imagem">
+    Controle de Estoque
+
+  </h1>
+  <hr>
+  <div class="estoque">
+  <label for="peca1">Estoque inicial Android:</label>
+  <input type="number" id="peca1" min="0">
+  
+
+  
+  <label for="peca2">Estoque inicial iPhone:</label>
+  <input type="number" id="peca2" min="0">
+  
+
+  
+  <label for="peca3">Estoque inicial Xiaomi:</label>
+  <input type="number" id="peca3" min="0">
+  
+  <button onclick="adicionarAoEstoque()">Adicionar ao estoque</button>
+  </div>
+  
+  <p class="exibir" id="exibiPeca1">Estoque Android: </p>
+  <p class="exibir" id="exibiPeca2">Estoque Iphone: </p>
+  <p class="exibir" id="exibiPeca3">Estoque Xiaomi: </p>
+
+
+
+
+<div class="botoes">  <button id="buyButton" class="selecionado">Comprar</button>
+  <button id="sellButton">Vender</button>
+</div>
+ 
+  <div id="opcoesCompra" class="opcoes">
+    <!-- Opções de compra aqui -->
+    <label for="peca1">Android</label>
+    <input type="number" id="peca1" min="0">
+    
+  
+    
+    <label for="peca2">iPhone</label>
+    <input type="number" id="peca2" min="0">
+    
+  
+    
+    <label for="peca3">Xiaomi</label>
+    <input type="number" id="peca3" min="0">
+
+    <button class="ultimo" onclick="adicionarAoEstoque()">Finalizar compra</button>
+  </div>
+  
+  <div id="opcoesVenda" class="opcoes">
+    <!-- Opções de venda aqui -->
+    <label for="peca1">Android</label>
+    <input type="number" id="peca1" min="0">
+    
+  
+    
+    <label for="peca2">iPhone</label>
+    <input type="number" id="peca2" min="0">
+    
+  
+    
+    <label for="peca3">Xiaomi</label>
+    <input type="number" id="peca3" min="0">
+
+    <button class="ultimo" onclick="venderEstoque()">Finalizar venda</button>
+  </div>
+
+  <footer>
+    <p>Desenvolvido por:</p>
+    <p>José Adeilton,</p>
+    <p>Jessica tavares, </p>
+    <p>Ivinny Lima</p>
+  </footer>
+  
+  <script src="teste.js"></script>
+  
+</body>
+</html>
